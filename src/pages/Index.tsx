@@ -8,20 +8,30 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Header */}
+            {/* Header */}
       <div className="flex items-center justify-between p-6 bg-blue-50">
+        {/* Logo */}
         <div className="flex items-center gap-3">
           <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
             <Heart className="h-6 w-6 text-white" />
           </div>
-          <h1 className="text-2xl font-bold text-blue-600">U - Unified Care</h1>
+          <h1 className="text-2xl font-bold text-blue-600">GVNI</h1>
         </div>
+
+        {/* Connect GvNi Button */}
+        <Button
+          onClick={() => window.open("https://enchanting-biscochitos-ceec86.netlify.app", "_blank")}
+          className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-blue-600 hover:to-purple-600 text-white px-5 py-2 rounded-full shadow-md hover:shadow-xl transition duration-300 font-semibold text-sm"
+        >
+          Connect GVNI-Care
+        </Button>
       </div>
+
 
       {/* Hero Section */}
       <div className="max-w-4xl mx-auto px-6 py-12 text-center">
         <h1 className="text-5xl font-bold text-gray-900 mb-6">
-          Welcome to <span className="text-blue-600">U - Unified Care</span>
+          Welcome to <span className="text-blue-600">GVNI</span>
         </h1>
         <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
           Complete Healthcare Management System
@@ -90,11 +100,19 @@ const Index = () => {
         {/* Quick Demo Access */}
         <div className="text-center">
           <p className="text-sm text-gray-600 mb-4">Want to explore the features?</p>
-          <div className="flex gap-4 justify-center">
-            <Button variant="outline" onClick={() => navigate('/patient/dashboard')} className="border-blue-600 text-blue-600 hover:bg-blue-50">
+          <div className="flex flex-wrap gap-4 justify-center">
+            <Button
+              variant="outline"
+              onClick={() => navigate('/patient/dashboard')}
+              className="border-blue-600 text-blue-600 hover:bg-blue-50"
+            >
               View Patient Demo
             </Button>
-            <Button variant="outline" onClick={() => navigate('/doctor/dashboard')} className="border-green-600 text-green-600 hover:bg-green-50">
+            <Button
+              variant="outline"
+              onClick={() => navigate('/doctor/dashboard')}
+              className="border-green-600 text-green-600 hover:bg-green-50"
+            >
               View Doctor Demo
             </Button>
           </div>

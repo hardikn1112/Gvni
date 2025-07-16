@@ -118,14 +118,7 @@ const AppointmentsPage = () => {
           </div>
           <LanguageSelector />
         </div>
-
-        {/* Quick Actions */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-          <Button className="h-20 flex-col gap-2">
-            <Video className="h-6 w-6" />
-            Video Consultation
-          </Button>
-        </div>
+        
 
         {/* Search and Filter */}
         <div className="flex gap-4 mb-6">
